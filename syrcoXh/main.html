@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!--
+      main.html syrcoX - SYstem Remote COmands eXecutor
+      
+      Copyright 2011 Alexander Desyatnichenko <desyatnichenko at gmail.com>
+      
+      This program is free software; you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation; either version 2 of the License, or
+      (at your option) any later version.
+      
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      
+      You should have received a copy of the GNU General Public License
+      along with this program; if not, write to the Free Software
+      Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+      MA 02110-1301, USA.
+-->
+
+
+<html>
+	<head>
+  
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <title>syrcoX</title>
+
+  
+<style type="text/css">
+    body { color: #111111; background-color: #dddddd; }
+    a:link { color: #0000CC; }
+    p, address {margin-left: 3em;}
+    span {font-size: smaller;}
+    table {text-align: center; vertical-align: top; width: 100%; margin-left: auto; margin-right: auto;}
+</style>
+  
+</head>
+<body>
+	<nav>
+	<a href="syrcoX">syrcoX Home</a> 
+	System status: 
+	<a href="syrcoX?allprocess">All process</a> 
+	<a href="syrcoX?allusers">All users</a> 
+	<a href="syrcoX?dff">Disk usage</a> 
+	System information: 
+	<a href="syrcoX?cpuinformation">CPU information</a> 
+	<a href="syrcoX?memoryinformation">Memory information</a> 
+	System Executer: 
+	<a href="syrcoX?reboott">Reboot</a> 
+	<a href="syrcoX?powerofff">Poweroff</a>
+	</nav>
+<form enctype="text/plain" method="post" action="../cgi-bin/syrcoX" name="syrcoXmain">
+  <div style="text-align: center;">
+  <h1>
+	  SYstem Remote COmmand eXecutor (syrcoX)
+	  </h1>
+  <table border="2" cellpadding="2" cellspacing="2">
+    <tbody>
+      <tr>
+        <td>
+        <h4>System status</h4>
+        </td>
+      </tr>
+      <tr>
+        <td><a href="syrcoX?allprocess">All process</a></td>
+      </tr>
+      <tr>
+        <td><a href="syrcoX?allusers">All users</a></td>
+      </tr>
+      <tr>
+        <td><a href="syrcoX?dff">Disk usage</a></td>
+      </tr>
+      <tr>
+        <td>
+        <h4>System information</h4>
+        </td>
+      </tr>
+      <tr>
+        <td><a href="../cgi-bin/syrcoX?cat%20/proc/cpuinfo">CPU information</a></td>
+      </tr>
+      <tr>
+        <td><a href="../cgi-bin/syrcoX?cat%20/proc/meminfo">Memory information</a></td>
+      </tr>
+      <tr>
+        <td>
+        <h4>System Executer</h4>
+        </td>
+      </tr>
+      <tr>
+        <td><a href="../cgi-bin/syrcoX?reboot">Reboot</a></td>
+      </tr>
+      <tr>
+        <td><a href="../cgi-bin/syrcoX?poweroff">Poweroff</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  </div>
+</form>
+
+</body></html>
