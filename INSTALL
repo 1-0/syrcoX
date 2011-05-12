@@ -1,0 +1,3 @@
+Just put syrcoX files into cgi-bin directory on your server
+and give them the execute and read premitions
+(by use commands `chmod +x` and `chmod +r`).
