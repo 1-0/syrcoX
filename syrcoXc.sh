@@ -52,12 +52,14 @@ function anyaverX()
 {
 	cat ./syrcoXh/main.html|sed -n '/<form/,/>/p'
 	echo '<h1>syrcoX</h1>'
-	echo '<h2>'
+	echo '<h2>ls '
 	echo $FOLDERNAMEE
 	echo '</h2><textarea rows='20' cols='100' name='text'>'
 	ls -l $FOLDERNAMEE
-	echo '</textarea><br>'
-	cat ./syrcoXh/main.html|sed -n '/Show any dir/,/submit>/p'
+	echo '</textarea><br> Show any dir: <input name="foldernamee" value="'
+	echo $FOLDERNAMEE
+	echo '" type="text"><br><input type=submit>'
+	#cat ./syrcoXh/main.html|sed -n '/Show any dir/,/submit>/p'
 	echo '</form>'
 
 	}
