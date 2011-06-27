@@ -40,7 +40,7 @@
 </head>
 <body>
 	<nav>
-	<a href="syrcoX.sh">syrcoX.sh Home</a> 
+	<a href="syrcoX.sh">Start page</a> 
 	System status: 
 	<a href="syrcoX.sh?allprocess">All process</a> 
 	<a href="syrcoX.sh?allusers">All users</a> 
@@ -52,7 +52,7 @@
 	<a href="syrcoX.sh?reboott">Reboot</a> 
 	<a href="syrcoX.sh?powerofff">Poweroff</a>
 	</nav>
-<form enctype="text/plain" method="post" action="../cgi-bin/syrcoX.sh" name="syrcoXmain">
+<form enctype="text/plain" method="get" action="../cgi-bin/syrcoX.sh" name="syrcoXmain">
   <div style="text-align: center;">
   <h1>
 	  SYstem Remote COmmand eXecutor (syrcoX.sh)
@@ -83,6 +83,14 @@
       </tr>
       <tr>
         <td><a href="../cgi-bin/syrcoX.sh?cat%20/proc/meminfo">Memory information</a></td>
+      </tr>
+      <tr>
+        <td><a href="../cgi-bin/syrcoX.sh?show%20/home">Show directory home dir.</a>
+       </tr>
+      <tr>
+        <td>
+        Show any dir: <input name="foldername" value="/home" type="text"><br><input type=submit>
+        </td>
       </tr>
       <tr>
         <td>
