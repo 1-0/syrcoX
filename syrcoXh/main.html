@@ -41,18 +41,19 @@
 <body>
 	<nav>
 	<a href="syrcoX.sh">Start page</a> 
-	System status: 
+	<br>System status: 
 	<a href="syrcoX.sh?allprocess">All process</a> 
-	<a href="syrcoX.sh?allusers">All users</a> 
-	<a href="syrcoX.sh?dff">Disk usage</a> 
-	System information: 
+	 | <a href="syrcoX.sh?allusers">All users</a> 
+	 | <a href="syrcoX.sh?dff">Disk usage</a> 
+	<br>System information: 
 	<a href="syrcoX.sh?cpuinformation">CPU information</a> 
-	<a href="syrcoX.sh?memoryinformation">Memory information</a> 
-	System Executer: 
+	 | <a href="syrcoX.sh?memoryinformation">Memory information</a> 
+	 | <a href="../cgi-bin/syrcoXc.sh?foldernamee=./">Show curient dir</a>
+	<br>System Executer: 
 	<a href="syrcoX.sh?reboott">Reboot</a> 
-	<a href="syrcoX.sh?powerofff">Poweroff</a>
+	 | <a href="syrcoX.sh?powerofff">Poweroff</a>
 	</nav>
-<form enctype="text/plain" method="get" action="../cgi-bin/syrcoX.sh" name="syrcoXmain">
+<form enctype="text/plain" method="get" action="../cgi-bin/syrcoXc.sh" name="syrcoXmain">
   <div style="text-align: center;">
   <h1>
 	  SYstem Remote COmmand eXecutor (syrcoX.sh)
@@ -85,11 +86,11 @@
         <td><a href="../cgi-bin/syrcoX.sh?cat%20/proc/meminfo">Memory information</a></td>
       </tr>
       <tr>
-        <td><a href="../cgi-bin/syrcoX.sh?show%20/home">Show directory home dir.</a>
+        <td><a href="../cgi-bin/syrcoXc.sh?foldernamee=./">Show curient dir</a>
        </tr>
       <tr>
         <td>
-        Show any dir: <input name="foldername" value="/home" type="text"><br><input type=submit>
+        Show any dir: <input name="foldernamee" value="/home" type="text"><br><input type=submit>
         </td>
       </tr>
       <tr>
