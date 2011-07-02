@@ -19,6 +19,46 @@
       #Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
       #MA 02110-1301, USA.
 
+
+ok_answer = "HTTP/1.0 200 OK
+Content-type: text/html
+"
+
+bad_request_answer = "HTTP/1.0 400 Bad Request
+Content-type: text/html
+
+<html>
+<body>
+<h1>Bad Request</h1>
+<p>This server did not understand your request.</p>
+</body>
+</html>
+"
+
+not_found_answer_template = "HTTP/1.0 404 Not Found
+Content-type: text/html
+
+<html>
+<body>
+<h1>Not Found</h1>
+<p>The requested URL %s was not found on this server.</p>
+</body>
+</html>
+"
+
+bad_answer_response_template = "HTTP/1.0 501 Method Not Implemented
+Content-type: text/html
+
+<html>
+<body>
+<h1>Method Not Implemented</h1>
+<p>The method %s is not implemented by this server.</p>
+</body>
+</html>
+"
+
+
+
 #while read data; do
     #echo "data = $data"
     #date
